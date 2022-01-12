@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SignUP</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="signUp" class="signUp-section">
+            <div class=social-media>
+                <h1>Sign Up</h1>
+                <p>Sign Up with your social media Accounts</p>
+                <div class="icons">
+
+                </div>
+                <!-- icons  -->
+            </div>
+            <!-- social-media -->
+
+            <form action="./responces.json" method="post">
+
+                <input type="text" placeholder="Enter your Full Name" data-name="fname" required>
+
+                <input type="email" placeholder="Email" data-name="email" required>
+
+                <input type="password" placeholder="Password" data-name="password" required>
+
+                <input type="text" placeholder="Phone No." data-name="phone">
+
+                <button class="signUp-btn" type="submit" >Register</button>
+            </form>
+            <p>Already have an account? Login <a href="#" class="toggle" data-name="login">here</a> </p>
+        </div>
+        <!--signUp-section -->
+
+        <div id="login" class="login-section">
+            <h1>Login</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut doloribus illo distinctio.</p>
+            
+            <form action="./responces.json" method="post">
+                <input placeholder="Enter email" type="email" data-name="email" required>
+                <input placeholder="Enter your password" type="password" data-name="password" required>
+
+                <button class="login-btn" type="submit">Register</button>
+            </form>
+            <p>Don't have an account? Sign up <a href="#" class="toggle" data-name="signUp">here</a> </p>
+        </div>
+    </div>
+
+<script src="./app.js"></script>
+</body>
+
+</html>
